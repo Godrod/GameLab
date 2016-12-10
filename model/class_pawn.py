@@ -15,11 +15,10 @@ class TypeLife(Enum):
     mort = 2
 
 class Pawn(object):
-    def __init__(self, nom, couleur, position, vivant):
+    def __init__(self, nom, couleur):
         self.nom = nom
         self.couleur = couleur
-        self.position = position
-        self.vivant = vivant
+        
 
     def deplacement(self):
         print (str(self.nom))
