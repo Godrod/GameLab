@@ -26,4 +26,9 @@ class Board(object):
             i = i + 8
 
     def showCase(self, case):
+        #Verifie que case est de type int
+        if not (isinstance(case, int)):
+            print("L'arguement doit etre de type int")
+            return
+
         print('|', self.cases[case].nom,'|')
