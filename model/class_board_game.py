@@ -6,7 +6,17 @@ class TypeBoard(Enum):
 
 class Board(object):
     def __init__(self):
-        self.cases = range(0,64)
+        self.cases = [[0, 0, 0, 0, 0, 0, 0, 0], \
+                      [0, 0, 0, 0, 0, 0, 0, 0], \
+                      [0, 0, 0, 0, 0, 0, 0, 0], \
+                      [0, 0, 0, 0, 0, 0, 0, 0], \
+                      [0, 0, 0, 0, 0, 0, 0, 0], \
+                      [0, 0, 0, 0, 0, 0, 0, 0], \
+                      [0, 0, 0, 0, 0, 0, 0, 0]]
 
-    def deplacement(self):
-        print("le plateau se deplace")
+
+    def getBoard(self):
+        return self.cases
+
+    def show(self):
+        i = 0
